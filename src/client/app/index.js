@@ -9,7 +9,7 @@ const client = new ApolloClient({
     networkInterface: createNetworkInterface({ uri: "http://localhost:3000/graphql" }),
 });
 
-const QueryPosts = gql`query {posts {id, title, vote}}`;
+const QueryPosts = gql`query {posts {id, title, url, vote}}`;
 
 const PostListWithData = graphql(QueryPosts, {
     props: ({data: { loading, posts }}) => ({

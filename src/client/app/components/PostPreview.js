@@ -20,6 +20,7 @@ export default class PostPreview extends React.Component {
         return (
             <div>
                 <h2>{this.props.title}</h2>
+                <h3>{this.props.url}</h3>
                 <span>{this.state.vote}</span>
                 <button onClick={() => this.doUpVote(1)}>up</button>
                 <button onClick={() => this.doUpVote(-1)}>down</button>
