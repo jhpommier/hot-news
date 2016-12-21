@@ -2,14 +2,23 @@
 
 POC using nodejs, graphql, react
 
-## Usage
+## Pré-requis
+  * NodeJS 6.9.x
 
-Run webpack in watch mode :
+## Installation
+
 ```bash
-$ npm run dev
+$ npm install
 ```
 
-Build app :
+## Usage
+
+### Variables d'environnements
+  * `NODE_ENV` : production | development (default)
+  * `NODE_PORT` : 3000 (default)
+
+### Serveur
+Pour tester en local :
 ```bash
-$ npm run build
+$ npm run server:dev
 ```
