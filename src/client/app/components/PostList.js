@@ -1,12 +1,12 @@
-import React from 'react';
-import PostPreview from './PostPreview';
+import React from "react";
+import PostPreview from "./PostPreview";
 
 export default class PostList extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
             posts: []
-        }
+        };
     }
 
     componentWillReceiveProps(nextProps) {

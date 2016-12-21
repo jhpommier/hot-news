@@ -1,12 +1,12 @@
 import React from "react";
 import {render} from "react-dom";
-import ApolloClient, { createNetworkInterface } from 'apollo-client';
-import { ApolloProvider, graphql } from 'react-apollo';
-import gql from 'graphql-tag';
-import PostList from './components/PostList';
+import ApolloClient, { createNetworkInterface } from "apollo-client";
+import { ApolloProvider, graphql } from "react-apollo";
+import gql from "graphql-tag";
+import PostList from "./components/PostList";
 
 const client = new ApolloClient({
-  networkInterface: createNetworkInterface({ uri: 'http://localhost:3000/graphql' }),
+    networkInterface: createNetworkInterface({ uri: "http://localhost:3000/graphql" }),
 });
 
 const QueryPosts = gql`query {posts {id, title, vote}}`;
@@ -22,5 +22,5 @@ render(
     <ApolloProvider client={client}>
         <PostListWithData />
     </ApolloProvider>,
-    document.getElementById('app')
+    document.getElementById("app")
 );

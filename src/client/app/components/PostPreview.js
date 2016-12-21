@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 export default class PostPreview extends React.Component {
     constructor(props) {
@@ -10,7 +10,7 @@ export default class PostPreview extends React.Component {
 
     doUpVote(increment) {
         this.setState(
-            (prevState, props) => ({
+            (prevState) => ({
                 vote: prevState.vote + increment
             })
         );
