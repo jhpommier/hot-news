@@ -4,14 +4,14 @@ export default class PostPreview extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            upvote: this.props.upvote
+            vote: this.props.vote
         };
     }
 
     doUpVote(increment) {
         this.setState(
             (prevState, props) => ({
-                upvote: prevState.upvote + increment
+                vote: prevState.vote + increment
             })
         );
     }
@@ -20,7 +20,7 @@ export default class PostPreview extends React.Component {
         return (
             <div>
                 <h2>{this.props.title}</h2>
-                <span>{this.state.upvote}</span>
+                <span>{this.state.vote}</span>
                 <button onClick={() => this.doUpVote(1)}>up</button>
                 <button onClick={() => this.doUpVote(-1)}>down</button>
             </div>
