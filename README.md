@@ -22,3 +22,5 @@ Pour tester en local :
 ```bash
 $ npm run server:dev
 ```
+
+Puis aller faire un tour sur http://localhost:3000
